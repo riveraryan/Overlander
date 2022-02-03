@@ -16,6 +16,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
  * @version 1.0
  */
 @Controller
+@RequestMapping
 public class IndexController
 {
     private EventService eventService;
