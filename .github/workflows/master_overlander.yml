@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'overlander'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_52DFAFE3ADB94CA5B1E915866657E135 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D1632D426DCB4B20A5146A54F72D54F3 }}
           package: '*.jar'
