@@ -1,0 +1,92 @@
+<!--
+    Markup for the Admin dashboard page of the Overlander web app.
+    Author: Ryan Rivera
+    Date:   10/06/21
+    File:   adminDashboard.html
+-->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/fragments/parts :: head('User Dashboard', '/css/styles.css')"></head>
+<body>
+
+    <!--  Navbar  -->
+    <nav th:replace="/fragments/parts :: navbar('index-links')"></nav>
+
+    <!--  Section Header  -->
+    <header th:replace="/fragments/parts :: header('Admin Dashboard')"></header>
+
+    <!--  Page Content  -->
+    <div class="container fade-in">
+
+        <!--  Metrics Table  -->
+        <hr class="section-divider">
+        <h3 class="text-center">Site Metrics</h3>
+        <table class="table table-striped text-center">
+            <tbody id="metricsTable">
+            <tr>
+                <th scope="col" class="col-6">HTTP Server Requests:</th>
+                <td id="requestTotal"></td>
+            </tr>
+            <tr>
+                <th scope="col">Process Uptime:</th>
+                <td id="processUptime"></td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!--  Status Table  -->
+        <hr class="section-divider">
+        <h3 class="text-center">Server Status</h3>
+        <table class="table table-striped text-center">
+            <tbody id="statusTable">
+                <tr>
+                    <th scope="col" class="col-6">Application Status:</th>
+                    <td id="appStatus"></td>
+                </tr>
+                <tr>
+                    <th scope="col">Database Status:</th>
+                    <td id="dbStatus"></td>
+                </tr>
+                <tr>
+                    <th scope="col">Ping Status:</th>
+                    <td id="pingStatus"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--  Environment Details Table  -->
+        <hr class="section-divider">
+        <h3 class="text-center">Environment Details</h3>
+        <table class="table table-striped text-center">
+            <tbody id="environmentTable">
+                <tr>
+                    <th scope="col" class="col-6">Operating System:</th>
+                    <td id="os"></td>
+                </tr>
+                <tr>
+                    <th scope="col">Java Version:</th>
+                    <td id="javaVersion"></td>
+                </tr>
+                <tr>
+                    <th scope="col" colspan="1">Local Port:</th>
+                    <td id="localPort"></td>
+                </tr>
+                <tr>
+                    <th scope="col" colspan="1">Country:</th>
+                    <td id="country"></td>
+                </tr>
+                <tr>
+                    <th scope="col" colspan="1">Timezone:</th>
+                    <td id="timeZone"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr class="section-divider">
+    </div>
+
+<!--  Footer  -->
+<footer th:replace="/fragments/parts :: footer"></footer>
+<script src="/js/scripts.js"></script>
+</body>
+</html>

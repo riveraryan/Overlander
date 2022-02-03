@@ -1,0 +1,82 @@
+<!--
+    Markup for the details page of the Overlander web app.
+    Author: Ryan Rivera
+    Date:   10/08/21
+    File:   eventDetails.html
+-->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/fragments/parts :: head('Event Details', '/css/styles.css')"></head>
+<body>
+    <!--  Navbar  -->
+    <nav th:replace="/fragments/parts :: navbar(other-links)"></nav>
+
+    <!--  Section Header  -->
+    <header th:replace="/fragments/parts :: header('Event Details')"></header>
+
+    <!--  Page Content  -->
+    <div class="container fade-in">
+
+        <!--  Event Details  -->
+        <hr class="section-divider">
+        <div class="event-details">
+            <table class="table table-striped text-center">
+                <thead>
+                    <th colspan="2" th:text="${event.name}"></th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Difficulty:</td>
+                        <td th:text="${event.difficulty}"></td>
+                    </tr>
+                    <tr>
+                        <td>Date:</td>
+                        <td th:text="${event.date}"></td>
+                    </tr>
+                    <tr>
+                        <td>Time:</td>
+                        <td th:text="${event.time}"></td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td th:text="${event.address}"></td>
+                    </tr>
+                    <tr>
+                        <td>City:</td>
+                        <td th:text="${event.city}"></td>
+                    </tr>
+                    <tr>
+                        <td>State:</td>
+                        <td th:text="${event.state}"></td>
+                    </tr>
+                    <tr>
+                        <td>Zip:</td>
+                        <td th:text="${event.zip}"></td>
+                    </tr>
+                    <tr>
+                        <td>Leader:</td>
+                        <td th:text="${event.user.getFName() + ' ' + event.user.getLName()}"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td th:text="${event.user.getEmail()}"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone:</td>
+                        <td th:text="${event.user.getPhone()}"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h5>Details:</h5>
+            <p th:text="${event.description}"></p>
+        </div>
+        <div class="btn-group-align-center">
+            <a href="/overlander/events/all"><button type="button">Back</button></a>
+        </div>
+        <hr class="section-divider">
+    </div>
+
+    <!--  Footer  -->
+    <footer th:replace="/fragments/parts :: footer"></footer>
+</body>
+</html>

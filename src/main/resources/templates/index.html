@@ -1,0 +1,74 @@
+<!--
+    Markup for the index page of the Overlander web app.
+    Author: Ryan Rivera
+    Date:   10/06/21
+    File:   index.html
+-->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/fragments/parts :: head('Overlander', '/css/styles.css')"></head>
+<body>
+
+    <!--  Navbar  -->
+    <nav th:replace="/fragments/parts :: navbar('index-links')"></nav>
+
+    <!--  Page Header  -->
+    <div class="page-header index-header fade-in">
+        <h2 class="logo">Overlander</h2>
+        <h4>Overlanding Adventure Planner</h4>
+    </div>
+
+    <!--  Page Content  -->
+    <div class="container ad-card-group fade-in">
+        <hr class="section-divider">
+        <div class="row" id="about">
+            <div class="col-8">
+                <h4 class="">Stop Dreaming.  Start Doing.</h4>
+                <p>Overlanding is vehicle based adventure travel that combines elements of camping
+                    and off-roading.  It pits you and your vehicle against the elements.  Whether its
+                    as intense as dense forest, river-crossings, and high mountain passes or simply a
+                    trip to the beach, proper planning is key.  Our suite of tools will help have a
+                    successful trip.
+                </p>
+            </div>
+        </div>
+        <hr class="section-divider">
+        <div class="row">
+            <img class="col-12 col-xl-6 col-lg-6 col-md-6" src="/images/planning.jpg" alt="Hikers on a rocky trail">
+            <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                <h4 class="">Plan Your Next Adventure.</h4>
+                <p>Build, modify, save, and access your trip from anywhere using
+                    our intuitive web app.  Set times, dates, locations, packing lists,
+                    vehicle requirements, and more.
+                </p>
+            </div>
+        </div>
+        <hr class="section-divider">
+        <div class="row">
+            <img class="col-12 col-xl-6 col-lg-6 col-md-6" src="/images/toyotagroup.jpg"
+                 alt="Off road vehicles on a beach">
+            <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                <h4 class="">Coordinate With Friends</h4>
+                <p>Overlander allows you to connect with other overlanding enthusiasts in your
+                    area.  Connect with new friends and invite them to join your event. Manage trip
+                    participants.  Form a convoy.
+                </p>
+            </div>
+        </div>
+        <hr class="section-divider">
+        <div class="row">
+            <img class="col-12 col-xl-6 col-lg-6 col-md-6" src="/images/adventure.jpg" alt="A woman sitting atop an SUV">
+            <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                <h4 class="">Discover The Outdoors.</h4>
+                <p>Don't let any missed details get in the way of your adventure. Overlander helps
+                    you organize your trip so that you are prepared.
+                </p>
+            </div>
+        </div>
+        <hr class="section-divider">
+    </div>
+
+    <!--  Footer  -->
+    <footer th:replace="/fragments/parts :: footer"></footer>
+</body>
+</html>

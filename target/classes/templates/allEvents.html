@@ -1,0 +1,78 @@
+<!--
+    Markup for the event summary page of the Overlander web app.
+    Author: Ryan Rivera
+    Date:   10/07/21
+    File:   allEvents.html
+-->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/fragments/parts :: head('Events Summary Page', '/css/styles.css')"></head>
+<body>
+    <!--  Navbar  -->
+    <nav th:replace="/fragments/parts :: navbar(other-links)"></nav>
+
+    <!--  Section Header  -->
+    <header th:replace="/fragments/parts :: header('Upcoming Events')"></header>
+
+    <!--  Page Content  -->
+    <div class="container fade-in">
+
+        <!--  All Events Table  -->
+        <hr class="section-divider">
+
+        <div class="btn-group-align-center">
+            <a th:href="@{/overlander/events/add}">
+                <button type="button" value="View">
+                    <span>Add New Event</span>
+                </button>
+            </a>
+        </div>
+        <table class="table table-responsive-md table-striped text-center">
+            <thead>
+                <tr>
+                    <th class="text-left" scope="col">Event</th>
+                    <th scope="col">City</th>
+                    <th scope="col">State</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Details</th>
+                    <th scope="col">Edit</th>
+                    <th scope="col">Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr  th:each="event : ${events}">
+                    <td class="text-left" th:text="${event.name}"></td>
+                    <td th:text="${event.city}"></td>
+                    <td th:text="${event.state}"></td>
+                    <td th:text="${event.date}"></td>
+                    <td>
+                        <a th:href="@{/overlander/events/details/{id}(id=${event.id})}">
+                            <button type="button" value="View">
+                                <span>View</span>
+                            </button>
+                        </a>
+                    </td>
+                    <td>
+                        <a th:href="@{/overlander/events/edit/{id}(id=${event.id})}">
+                            <button type="button">
+                                <span>Edit</span>
+                            </button>
+                        </a>
+                    </td>
+                    <td>
+                        <a th:href="@{/overlander/events/delete/{id}(id=${event.id})}">
+                            <button type="button">
+                                <span>Delete</span>
+                            </button>
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr class="section-divider">
+    </div>
+
+    <!--  Footer  -->
+    <footer th:replace="/fragments/parts :: footer"></footer>
+</body>
+</html>

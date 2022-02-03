@@ -1,0 +1,191 @@
+/*
+    Styles for the Overlander Web App
+    Author: Ryan Rivera
+    Date:   10/06/21
+    File:   styles.css
+*/
+
+/*****  Structural Styles  ******/
+body, html{
+    font-family: 'Varela Round', sans-serif;
+    background: #e5e5e5;
+    scroll-behavior: smooth;
+}
+
+/*****  Navbar Styles  *****/
+nav {
+    background-color: #e5e5e5;
+}
+.navbar-brand {
+    color: #1d3557!important;
+    font-size: 1.75rem;
+    font-family: 'Lobster Two', cursive, sans-serif;
+}
+.nav-link{
+    color: #1d3557!important;
+    border-radius: .5rem;
+    margin: 0 6px 0 6px;
+    font-weight: bold;
+    text-align: center;
+}
+.navbar-toggler {
+    border: 2px solid #fca311!important;
+}
+.navbar-toggler:hover, .nav-link:hover{
+    background-color: #fca311;
+    transition: background-color .35s;
+}
+@media(max-width: 975px){
+    .nav-link{
+        margin-top: .5rem;
+    }
+}
+.nav-divider{
+    height: 50%;
+    width: .1rem;
+    margin-left: 7px;
+    margin-right: 7px;
+    position: relative;
+    top: 25%;
+    background: #fca311;
+    display: block;
+}
+
+/*****  Footer Styles  ******/
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4rem;
+    bottom: 0;
+    background-color: #1d3557;
+    color: #e5e5e5;
+    text-align: center;
+}
+
+/*****  Divider Styles  ******/
+hr.section-divider{
+    margin: 3em 0;
+    height: 1px;
+    background-color: #fca311;
+    border: none;
+}
+
+/*****  Section Header Styles  ******/
+.page-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../images/mountains.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 30vh;
+    margin-bottom: 0;
+    border-radius: 0;
+    color: #f1faee;
+}
+.section-header{
+    height: 30vh;
+}
+
+/*****  Button Styles  ******/
+button{
+    color: #1d3557!important;
+    border: none;
+    border-radius: .5rem;
+    font-weight: bold;
+    padding: 6px 10px!important;
+}
+button:hover{
+    background-color: #fca311!important;
+    transition: .35s!important;
+}
+.btn-group-align-center{
+    margin: 1rem 1rem 2rem 1rem;
+    text-align: center;
+}
+
+/*****  Index Styles  ******/
+.index-header{
+    height: 50vh;
+}
+
+.index-header > h2 {
+    font-size: 3.5rem;
+    font-family: 'Lobster Two', cursive, sans-serif;
+}
+.ad-card-group > div > img {
+    max-width: 300px;
+    margin: auto;
+    box-shadow: gray;
+}
+.ad-card-group > div > div {
+    margin: auto;
+    text-align: center;
+}
+.ad-card-group h4 {
+    color: #14213d;
+    padding-top: 1.5rem;
+    font-weight: bold;
+}
+.ad-card-group p {
+    line-height: 2.5rem;
+}
+
+/*****  Summary Page Styles  *****/
+table{
+    color: #1d3557!important;
+}
+
+/*****  Details Page Styles  *****/
+.event-details{
+    max-width: 500px;
+    text-align: center;
+    margin: auto;
+}
+.event-details th{
+    font-size: 1.5rem;
+}
+
+/*****  Add Event Page Styles  *****/
+.add-event-form{
+    max-width: 720px!important;
+    margin: 0 auto;
+}
+.add-user-form{
+    max-width: 576px!important;
+    margin: 0 auto;
+}
+
+/*****  Animations  *****/
+.fade-in {
+    animation: fadeIn linear .5s;
+    -webkit-animation: fadeIn linear .5s;
+    -moz-animation: fadeIn linear .5s;
+    -o-animation: fadeIn linear .5s;
+    -ms-animation: fadeIn linear .5s;
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}

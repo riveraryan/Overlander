@@ -1,0 +1,59 @@
+<!--
+    Markup for the Api data display page of the Overlander web app.
+    Author: Ryan Rivera
+    Date:   10/06/21
+    File:   apiDataDisplay.html
+-->
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/fragments/parts :: head('Overlander - API Data', '/css/styles.css')"></head>
+<body>
+
+    <!--  Navbar  -->
+    <nav th:replace="/fragments/parts :: navbar('index-links')"></nav>
+
+    <!--  Section Header  -->
+    <header th:replace="/fragments/parts :: header('API Data')"></header>
+
+    <!--  Page Content  -->
+    <div class="container fade-in">
+
+        <!--  All Event Table  -->
+        <hr class="section-divider">
+        <h3 class="text-center">All Events</h3>
+        <table class="table table-responsive-md table-striped text-center">
+            <thead>
+            <tr>
+                <th class="text-left" scope="col">Event</th>
+                <th scope="col">City</th>
+                <th scope="col">State</th>
+                <th scope="col">Date</th>
+            </tr>
+            </thead>
+            <tbody id="eventsTable">
+            </tbody>
+        </table>
+
+        <!--  All Members Table  -->
+        <hr class="section-divider">
+        <h3 class="text-center">All Members</h3>
+        <table class="table table-responsive-md table-striped text-center">
+            <thead>
+            <tr>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+            </tr>
+            </thead>
+            <tbody id="usersTable">
+            </tbody>
+        </table>
+        <hr class="section-divider">
+    </div>
+
+<!--  Footer  -->
+<footer th:replace="/fragments/parts :: footer"></footer>
+<script src="/js/scripts.js"></script>
+</body>
+</html>
