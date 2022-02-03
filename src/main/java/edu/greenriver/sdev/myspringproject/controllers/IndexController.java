@@ -36,7 +36,7 @@ public class IndexController
      * Assigns mapping for and returns the index page
      * @return String name of the template file
      */
-    @RequestMapping({"", "/","/index", "/index.html", "/overlander"})
+    @RequestMapping(value = {"", "/","/index", "/index.html", "/overlander"})
     public String index()
     {
         return "index";
