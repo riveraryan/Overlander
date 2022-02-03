@@ -16,7 +16,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
  * @version 1.0
  */
 @Controller
-@RequestMapping
 public class IndexController
 {
     private EventService eventService;
@@ -37,10 +36,10 @@ public class IndexController
      * Assigns mapping for and returns the index page
      * @return String name of the template file
      */
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = {"", "/","/index", "/index.html", "/overlander"}, method = RequestMethod.GET)
     public String index()
     {
-        return "/index";
+        return "index";
     }
 
     /**
