@@ -39,7 +39,7 @@ public class IndexController
     @RequestMapping(value = "/")
     public String index()
     {
-        return "index";
+        return "/index";
     }
 
     /**
