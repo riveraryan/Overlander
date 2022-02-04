@@ -6,13 +6,13 @@
 -->
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="/fragments/parts :: head('Event Details', '/css/styles.css')"></head>
+<head th:replace="fragments/parts :: head('Event Details', '/css/styles.css')"></head>
 <body>
     <!--  Navbar  -->
-    <nav th:replace="/fragments/parts :: navbar(other-links)"></nav>
+    <nav th:replace="fragments/parts :: navbar(other-links)"></nav>
 
     <!--  Section Header  -->
-    <header th:replace="/fragments/parts :: header('Event Details')"></header>
+    <header th:replace="fragments/parts :: header('Event Details')"></header>
 
     <!--  Page Content  -->
     <div class="container fade-in">
@@ -77,6 +77,6 @@
     </div>
 
     <!--  Footer  -->
-    <footer th:replace="/fragments/parts :: footer"></footer>
+    <footer th:replace="fragments/parts :: footer"></footer>
 </body>
 </html>

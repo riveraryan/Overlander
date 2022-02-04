@@ -6,14 +6,14 @@
 -->
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="/fragments/parts :: head('Overlander - Sign-In', '/css/styles.css')"></head>
+<head th:replace="fragments/parts :: head('Overlander - Sign-In', '/css/styles.css')"></head>
 <body>
 
 <!--  Navbar  -->
-<nav th:replace="/fragments/parts :: navbar('index-links')"></nav>
+<nav th:replace="fragments/parts :: navbar('index-links')"></nav>
 
 <!--  Section Header  -->
-<header th:replace="/fragments/parts :: header('Sign-In')"></header>
+<header th:replace="fragments/parts :: header('Sign-In')"></header>
 
 <!--  Page Content  -->
 <div class="container ad-card-group fade-in">
@@ -49,6 +49,6 @@
 </div>
 
 <!--  Footer  -->
-<footer th:replace="/fragments/parts :: footer"></footer>
+<footer th:replace="fragments/parts :: footer"></footer>
 </body>
 </html>
