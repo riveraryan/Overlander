@@ -1,10 +1,10 @@
-INSERT INTO user VALUES (DEFAULT, 'Ryandrivera@yahoo.com', 'Ryan', 'Rivera', '$2a$10$oQ7AZ4jULdKY3BzNqlO4Qur5Dbe..rFsjPQfRJv8avPbETQeuSNM6',2532494713, 'rrivera');
+INSERT INTO user VALUES (DEFAULT, 'Joesmith@yahoo.com', 'Joe', 'Smith', '$2a$10$oQ7AZ4jULdKY3BzNqlO4Qur5Dbe..rFsjPQfRJv8avPbETQeuSNM6',1234567890, 'jsmith');
 INSERT INTO permissions VALUES (1, 'ROLE_USER', 1);
-INSERT INTO user VALUES (DEFAULT, 'Emmarrivera@yahoo.com', 'Emily', 'Rivera', '$2a$10$oQ7AZ4jULdKY3BzNqlO4Qur5Dbe..rFsjPQfRJv8avPbETQeuSNM6', 2532495670, 'erivera');
+INSERT INTO user VALUES (DEFAULT, 'Janedoe@yahoo.com', 'Jane', 'Doe', '$2a$10$oQ7AZ4jULdKY3BzNqlO4Qur5Dbe..rFsjPQfRJv8avPbETQeuSNM6', 9876543210, 'jdoe');
 INSERT INTO permissions VALUES (2, 'ROLE_USER', 2);
-INSERT INTO user VALUES (DEFAULT, 'R.Rogalski@hotmail.com', 'Robert', 'Rogalski', '$2a$10$oQ7AZ4jULdKY3BzNqlO4Qur5Dbe..rFsjPQfRJv8avPbETQeuSNM6', 2068892019, 'rrogalski');
+INSERT INTO user VALUES (DEFAULT, 'Suzycue@hotmail.com', 'Suzy', 'Cue', '$2a$10$oQ7AZ4jULdKY3BzNqlO4Qur5Dbe..rFsjPQfRJv8avPbETQeuSNM6', 1029384756, 'scue');
 INSERT INTO permissions VALUES (3, 'ROLE_USER', 3);
-INSERT INTO user VALUES (DEFAULT, 'Kim.Mccloud@aol.com', 'Kim', 'McCloud', '$2a$10$oQ7AZ4jULdKY3BzNqlO4Qur5Dbe..rFsjPQfRJv8avPbETQeuSNM6', 6543219513, 'mmccloud');
+INSERT INTO user VALUES (DEFAULT, 'Pepermint@aol.com', 'Pepper', 'Mint', '$2a$10$oQ7AZ4jULdKY3BzNqlO4Qur5Dbe..rFsjPQfRJv8avPbETQeuSNM6', 5647382910, 'pmint');
 INSERT INTO permissions VALUES (4, 'ROLE_USER', 4);
 INSERT INTO user VALUES (DEFAULT, 'admin@overlander.com', 'Admin', '', '$2a$10$oQ7AZ4jULdKY3BzNqlO4Qur5Dbe..rFsjPQfRJv8avPbETQeuSNM6', 0000000000, 'admin');
 INSERT INTO permissions VALUES (5, 'ROLE_ADMIN', 5);
