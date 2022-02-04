@@ -6,13 +6,13 @@
 -->
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="/fragments/parts :: head('Add an Event', '/css/styles.css')"></head>
+<head th:replace="fragments/parts :: head('Add an Event', '/css/styles.css')"></head>
 <body>
     <!--  Navbar  -->
-    <nav th:replace="/fragments/parts :: navbar(other-links)"></nav>
+    <nav th:replace="fragments/parts :: navbar(other-links)"></nav>
 
     <!--  Section Header  -->
-    <header th:replace="/fragments/parts :: header('Add an Event')"></header>
+    <header th:replace="fragments/parts :: header('Add an Event')"></header>
 
     <!--  Page Contents  -->
     <div class="container fade-in">
@@ -142,6 +142,6 @@
         <hr class="section-divider">
     </div>
 
-    <footer th:replace="/fragments/parts :: footer"></footer>
+    <footer th:replace="fragments/parts :: footer"></footer>
 </body>
 </html>

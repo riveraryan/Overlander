@@ -6,14 +6,14 @@
 -->
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="/fragments/parts :: head('Overlander - API Data', '/css/styles.css')"></head>
+<head th:replace="fragments/parts :: head('Overlander - API Data', '/css/styles.css')"></head>
 <body>
 
     <!--  Navbar  -->
-    <nav th:replace="/fragments/parts :: navbar('index-links')"></nav>
+    <nav th:replace="fragments/parts :: navbar('index-links')"></nav>
 
     <!--  Section Header  -->
-    <header th:replace="/fragments/parts :: header('API Data')"></header>
+    <header th:replace="fragments/parts :: header('API Data')"></header>
 
     <!--  Page Content  -->
     <div class="container fade-in">
@@ -53,7 +53,7 @@
     </div>
 
 <!--  Footer  -->
-<footer th:replace="/fragments/parts :: footer"></footer>
+<footer th:replace="fragments/parts :: footer"></footer>
 <script src="/js/scripts.js"></script>
 </body>
 </html>
