@@ -98,12 +98,17 @@ button{
     border: none;
     border-radius: .5rem;
     font-weight: bold;
-    padding: 6px 10px!important;
+    padding: 8px 10px!important;
 }
 button:hover{
     background-color: #fca311!important;
     transition: .35s!important;
 }
+.nav-item button {
+    background-color: transparent;
+    padding: 8px;
+}
+
 .btn-group-align-center{
     margin: 1rem 1rem 2rem 1rem;
     text-align: center;
